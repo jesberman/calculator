@@ -4,6 +4,11 @@
     <title>
         Test
     </title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 
 <body>
@@ -11,24 +16,98 @@
         To Use this Calculator, place a number in each of the first two text fields
     </h3>
     <h3>
-        Then, place either a +, -, /, or a * within the operator field
+        Then, press the button of the operation you want to perform
     </h3>
-    <h3>
-        Lastly, click on the "Try it" Button
-    </h3>
-    <br><br>
-    First Number:
-    <input type="text" id="number-1"> Second Number
-    <input type="text" id="number-2"> Operator
-    <input type="text" id="operator">
-    <button onclick="myFunction()">Try it</button>
+    <br>
+    <br>
+    <!-- <button onclick="myFunction()">Try it</button> -->
+    <div id="main">
+        <div id="view-pane">
+            <h1>
 
-    <p id="field1"></p>
-    <p id="field2"></p>
-    <p id="field3"></p>
+            </h1>
+        </div>
+        <div id="buttons">
+            <button onclick="pressPlus()" class="calc-buttons">
+                +
+            </button>
+            <button onclick="pressMinus()" class="calc-buttons">
+                -
+            </button>
+            <button onclick="pressTimes()" class="calc-buttons">
+                *
+            </button>
+            <button onclick="pressDivide()" class="calc-buttons">
+                /
+            </button>
+            <!-- <button id="equal-button">
+                =
+            </button> -->
+        </div>
+        <!-- <div id="number-buttons">
+            <div id="number-buttons-row1">
+                <button id="num-1" class="numb-button">
+                    1
+                </button>
+                <button id="num-2" class="numb-button">
+                    2
+                </button>
+                <button id="num-3" class="numb-button">
+                    3
+                </button>
+            </div>
+
+            <div id="number-buttons-row2">
+                <button id="num-4" class="numb-button">
+                    4
+                </button>
+                <button id="num-5" class="numb-button">
+                    5
+                </button>
+                <button id="num-6" class="numb-button">
+                    6
+                </button>
+            </div>
+
+            <div id="number-buttons-row3">
+                <button id="num-7" class="numb-button">
+                    7
+                </button>
+                <button id="num-8" class="numb-button">
+                    8
+                </button>
+                <button id="num-9" class="numb-button">
+                    9
+                </button>
+            </div>
+        </div> -->
+        <div style="position: relative; top: 80px; left: 50px; color: white; font-size: 30px;">
+            <div>
+                <input type="text" placeholder="First Number" id="number-1" style="font-size: 30px;">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="text" placeholder="Second Number" id="number-2" style="font-size: 30px;">
+            </div>
+
+            <br>
+
+            <!-- <div>
+                    Operator
+                    <input type="text" id="operator">
+                </div> -->
+
+        </div>
+    </div>
 
     <script src="logic2.js">
     </script>
+
+
+
+
 </body>
 
 </html>
